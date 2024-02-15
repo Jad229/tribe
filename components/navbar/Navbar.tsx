@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { AuthLinks } from "./AuthLinks";
 
 export const Navbar = () => {
   return (
@@ -11,11 +12,7 @@ export const Navbar = () => {
           <Image src="/logo.jpg" alt="tribe podcast" width={100} height={100} />
         </Link>
       </div>
-      <div className="flex gap-5">
-        <Link href="/about">About</Link>
-        <Link href="/news">News</Link>
-        <Link href="/contact">Contact</Link>
-      </div>
+      <AuthLinks />
     </nav>
   );
 };
