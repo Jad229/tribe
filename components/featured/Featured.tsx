@@ -5,17 +5,17 @@ import { buttonVariants } from "@/components/ui/button";
 
 //TODO: fix link to episodes
 export const Featured = async () => {
-  const req = await fetch(
-    "https://api.spotify.com/v1/shows/3FVxSoGAovaqVF2ZwTKZyE/episodes?offset=0&limit=50",
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
-      },
-    },
-  );
+  //   const req = await fetch(
+  //     "https://api.spotify.com/v1/shows/3FVxSoGAovaqVF2ZwTKZyE/episodes?offset=0&limit=50",
+  //     {
+  //       headers: {
+  //         Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+  //       },
+  //     },
+  //   );
 
-  const data = await req.json();
-  const { name: title }: { name: string } = data.items[0];
+  //   const data = await req.json();
+  //   const { name: title }: { name: string } = data.items[0];
 
   return (
     <section className="my-10 flex flex-col gap-5">
