@@ -1,3 +1,9 @@
+import { Featured } from "@/components/featured/Featured";
+
 export default function Home() {
-  return <h1>Hello World</h1>;
+  return (
+    <main>
+      <Featured />
+    </main>
+  );
 }
