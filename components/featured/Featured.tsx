@@ -40,7 +40,7 @@ export const Featured = async () => {
       <div className="bg-microphone6 relative h-80 rounded-t-3xl bg-black bg-opacity-30 bg-cover bg-center md:mx-auto md:w-5/6 xl:w-full">
         <div className="absolute bottom-0 left-0 right-0 flex h-1/3 items-center justify-center bg-white bg-opacity-10 backdrop-blur-sm">
           <h2 className="text-center text-xl font-bold tracking-wide text-white">
-            {title || "Latest Episode"}
+            Latest Episode
           </h2>
         </div>
       </div>
