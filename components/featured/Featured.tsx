@@ -31,7 +31,7 @@ export const Featured = async () => {
           <Button
             className={`${buttonVariants({ variant: "outline" })} gap-5 rounded-3xl border-white text-gray-400 hover:bg-white hover:text-black `}
           >
-            <Link className="text-xl" href="/episodes">
+            <Link className="text-xl" href="/">
               Episodes
             </Link>
           </Button>
