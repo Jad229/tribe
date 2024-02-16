@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`mx-auto max-w-7xl p-4 ${ArchivoBlack.className}`}>
+      <body className={`dark mx-auto max-w-7xl p-4 ${ArchivoBlack.className}`}>
         <Navbar />
         {children}
       </body>
