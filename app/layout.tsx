@@ -21,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`dark mx-auto max-w-7xl px-4 pt-4 ${ArchivoBlack.className}`}
-      >
+      <body className={`dark mx-auto max-w-7xl  ${ArchivoBlack.className}`}>
         <Navbar />
         {children}
         <Footer />
