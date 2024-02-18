@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { buttonVariants } from "@/components/ui/button";
@@ -32,7 +31,6 @@ async function getAllEpisodes() {
 //TODO: fix link to episodes
 export const Featured = async () => {
   const data = await getAllEpisodes();
-  console.log(data.items[0]);
 
   return (
     <section className="my-10 flex flex-col gap-5">
