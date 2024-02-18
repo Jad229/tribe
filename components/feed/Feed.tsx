@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+//TODO: replace with actual podcast data
 const podcastCards = [
   {
     title: "The Joe Rogan Experience",
@@ -27,6 +28,7 @@ export const Feed = () => {
         TUNE IN
       </h1>
       <div className="flex flex-wrap gap-10">
+        {/* //TODO: replace with podcast component */}
         {podcastCards.map((podcast, index) => (
           <div
             key={index}
