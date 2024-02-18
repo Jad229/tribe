@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Archivo_Black } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar/Navbar";
+import { Footer } from "@/components/footer/Footer";
 
 const ArchivoBlack = Archivo_Black({
   weight: "400",
@@ -20,9 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`dark mx-auto max-w-7xl p-4 ${ArchivoBlack.className}`}>
+      <body
+        className={`dark mx-auto max-w-7xl px-4 pt-4 ${ArchivoBlack.className}`}
+      >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
