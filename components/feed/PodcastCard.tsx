@@ -26,6 +26,13 @@ export default function PodcastCard({ podcast, index }: PodcastCardProps) {
     }
   };
 
+  const handleEnded = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0; // Reset the clip
+      setIsPlaying(false);
+    }
+  };
+
   return (
     <div className="flex flex-wrap items-center justify-around gap-5 border-t-2 pt-10">
       <p className="text-4xl font-bold">{index}</p>
@@ -50,7 +57,11 @@ export default function PodcastCard({ podcast, index }: PodcastCardProps) {
         <p>{format(podcast.release_date, "eeee MMM do, yyyy")}</p>
       </div>
       <div className="flex items-center">
-        <audio ref={audioRef} src={podcast.audio_preview_url} />
+        <audio
+          ref={audioRef}
+          src={podcast.audio_preview_url}
+          onEnded={handleEnded}
+        />
         <Button
           onClick={handlePlayPause}
           variant="outline"
