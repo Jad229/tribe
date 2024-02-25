@@ -1,7 +1,7 @@
 import { Featured } from "@/components/featured/Featured";
 import { Feed } from "@/components/feed/Feed";
 
-export async function getAllEpisodes() {
+async function getAllEpisodes() {
   const accessTokenRequest = await fetch(
     `https://accounts.spotify.com/api/token`,
     {
