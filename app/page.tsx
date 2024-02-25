@@ -28,7 +28,6 @@ export async function getAllEpisodes() {
 
 export default async function Home() {
   const data = await getAllEpisodes();
-  console.log(data.items[0]);
   return (
     <main className="p-4">
       <Featured featuredPodcast={data.items[0]} />

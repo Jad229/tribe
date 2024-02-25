@@ -5,7 +5,6 @@ type FeedProps = {
 };
 
 export const Feed = ({ podcasts }: FeedProps) => {
-  console.log(podcasts);
   return (
     <section>
       <h1 className="mb-10 text-7xl font-bold tracking-tighter sm:text-center md:text-left lg:basis-1/2 lg:text-8xl">
