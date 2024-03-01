@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="mt-10 flex flex-wrap items-center justify-around gap-10 bg-black py-12 text-center">
       <div className="flex w-full flex-none flex-col items-center gap-10 md:w-1/4">
-        <Image src="/logo.jpg" alt="logo" width={100} height={100} />
+        <Image src="/logo.png" alt="logo" width={100} height={100} />
         <div className="text-lg">
           <h3 className="text-3xl">Tribe Podcast</h3>
           <p>© {year}</p>
