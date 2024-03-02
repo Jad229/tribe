@@ -27,6 +27,7 @@ const config = {
         microphone6: "url('/images/microphone6.jpg')",
       },
       colors: {
+        gradient: "var(--bg-gradient)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
