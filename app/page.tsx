@@ -29,7 +29,7 @@ async function getAllEpisodes() {
 export default async function Home() {
   const data = await getAllEpisodes();
   return (
-    <main className="p-4">
+    <main className="mx-auto max-w-7xl p-4">
       <Featured featuredPodcast={data.items[0]} />
       <Feed podcasts={data.items} />
     </main>

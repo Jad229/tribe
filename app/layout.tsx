@@ -21,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`gradient dark mx-auto max-w-7xl ${ArchivoBlack.className}`}
-      >
+      <body className={`dark  ${ArchivoBlack.className}`}>
         <Navbar />
         {children}
         <Footer />
