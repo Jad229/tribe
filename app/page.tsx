@@ -1,7 +1,8 @@
 import { Featured } from "@/components/featured/Featured";
 import { Feed } from "@/components/feed/Feed";
+import { revalidatePath } from "next/cache";
 
-async function getAllEpisodes() {
+async function getAccessToken() {
   const accessTokenRequest = await fetch(
     `https://accounts.spotify.com/api/token`,
     {
@@ -12,12 +13,20 @@ async function getAllEpisodes() {
       body: `grant_type=client_credentials&client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}`,
     },
   );
-  const accessToken = await accessTokenRequest.json();
+
+  const tokenData = await accessTokenRequest.json();
+  const accessToken = tokenData.access_token;
+  console.log(tokenData);
+  return accessToken;
+}
+
+async function getAllEpisodes() {
+  const token = await getAccessToken();
   const req = await fetch(
     "https://api.spotify.com/v1/shows/3FVxSoGAovaqVF2ZwTKZyE/episodes?offset=0&limit=50",
     {
       headers: {
-        Authorization: `Bearer ${accessToken.access_token}`,
+        Authorization: `Bearer ${token}`,
       },
     },
   );
@@ -28,6 +37,7 @@ async function getAllEpisodes() {
 
 export default async function Home() {
   const data = await getAllEpisodes();
+  revalidatePath("/");
   return (
     <main className="p-4">
       <Featured featuredPodcast={data.items[0]} />
