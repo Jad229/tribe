@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const year = new Date().getFullYear();
 import { FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
 
@@ -36,9 +37,15 @@ export const Footer = () => {
       <div className="flex w-full flex-none flex-col items-center gap-10 md:w-1/4">
         <h3 className="text-3xl">Links</h3>
         <ul className="text-lg">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
       </div>
     </footer>
