@@ -1,5 +1,6 @@
 import Image from "next/image";
 const year = new Date().getFullYear();
+import { FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
 
 //TODO: Add socials and links
 export const Footer = () => {
@@ -14,13 +15,25 @@ export const Footer = () => {
       </div>
       <div className="flex w-full flex-none  flex-col items-center gap-10 md:w-1/4">
         <h3 className="text-3xl">Socials</h3>
-        <ul className="text-lg">
-          <li>TikTok logo</li>
-          <li>Youtube logo</li>
-          <li>Instagram logo</li>
+        <ul className="flex gap-5 text-lg">
+          <li>
+            <a href="https://open.spotify.com/show/3FVxSoGAovaqVF2ZwTKZyE?si=547d3dde95de4b41">
+              <FaSpotify size={30} />
+            </a>
+          </li>
+          <li>
+            <a href="https://youtube.com/@TRIBETHEPODCAST?si=ROpb1tzo392RV6qG">
+              <FaYoutube size={30} />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/tribethepodcast?igsh=a3V1cXdjc2RyajRj&utm_source=qr">
+              <FaInstagram size={30} />
+            </a>
+          </li>
         </ul>
       </div>
-      <div className="flex w-full flex-none  flex-col items-center gap-10 md:w-1/4">
+      <div className="flex w-full flex-none flex-col items-center gap-10 md:w-1/4">
         <h3 className="text-3xl">Links</h3>
         <ul className="text-lg">
           <li>Home</li>
