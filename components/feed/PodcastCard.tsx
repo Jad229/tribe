@@ -5,6 +5,7 @@ import { format } from "date-fns";
 import { Play, Pause } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { FaSpotify, FaYoutube } from "react-icons/fa";
 
 type PodcastCardProps = {
   podcast: Podcast;
@@ -55,6 +56,14 @@ export default function PodcastCard({ podcast, index }: PodcastCardProps) {
           <h2>{podcast.name}</h2>
         </Link>
         <p>{format(podcast.release_date, "eeee MMM do, yyyy")}</p>
+        <div className="flex gap-5">
+          <a href="https://youtube.com/@TRIBETHEPODCAST?si=ROpb1tzo392RV6qG">
+            <FaYoutube size={24} />
+          </a>
+          <a href="https://open.spotify.com/show/3FVxSoGAovaqVF2ZwTKZyE?si=547d3dde95de4b41">
+            <FaSpotify size={24} />
+          </a>
+        </div>
       </div>
       <div className="flex items-center">
         <audio
