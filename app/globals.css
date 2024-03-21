@@ -11,6 +11,8 @@
   titan-white: 240, 100%, 97%
   seashell: 25, 100%, 97%
   charcoal: 201, 27%, 29%
+  air-force blue: 201, 43%, 49%
+  cerulean: 201, 40%, 42%
   */
 
 @layer base {
@@ -22,7 +24,7 @@
       #000 99.51%
     ); */
 
-    --background: 201, 27%, 29%;
+    --background: 201, 40%, 42%;
     --foreground: 240, 100%, 97%;
 
     --card: 0 0% 100%;
