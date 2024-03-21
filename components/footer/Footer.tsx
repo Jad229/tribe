@@ -6,7 +6,7 @@ import { FaInstagram, FaSpotify, FaYoutube } from "react-icons/fa";
 //TODO: Add socials and links
 export const Footer = () => {
   return (
-    <footer className="mt-10 flex flex-wrap items-center justify-around gap-10 bg-black py-12 text-center">
+    <footer className="mt-10 flex flex-wrap items-center justify-around gap-10 bg-white py-12 text-center text-black">
       <div className="flex w-full flex-none flex-col items-center gap-10 md:w-1/4">
         <Image src="/logo.png" alt="logo" width={100} height={100} />
         <div className="text-lg">
