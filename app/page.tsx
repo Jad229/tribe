@@ -1,5 +1,6 @@
 import { Featured } from "@/components/featured/Featured";
 import { Feed } from "@/components/feed/Feed";
+import Hero from "@/components/hero/Hero";
 
 async function getAllEpisodes() {
   const accessTokenRequest = await fetch(
@@ -30,6 +31,7 @@ export default async function Home() {
   const data = await getAllEpisodes();
   return (
     <main className="mx-auto max-w-7xl p-4">
+      <Hero />
       <Featured featuredPodcast={data.items[0]} />
       <Feed podcasts={data.items} />
     </main>

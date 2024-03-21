@@ -6,7 +6,7 @@ import { AuthLinks } from "./AuthLinks";
 
 export const Navbar = () => {
   return (
-    <nav className="sticky left-0 right-0 top-0 z-10 flex w-full items-center justify-between px-4 shadow-xl backdrop-blur-lg lg:px-24">
+    <nav className="fixed left-0 right-0 top-0 z-10 flex w-full items-center justify-between px-4 shadow-xl backdrop-blur-lg lg:px-24">
       <div>
         <Link href="/">
           <Image src="/logo.png" alt="tribe podcast" width={100} height={100} />
