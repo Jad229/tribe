@@ -9,9 +9,9 @@ export default function Hero() {
         width={1920}
         height={1080}
         alt="tribe logo"
-        className="h-[500px] w-[500px] drop-shadow-xl"
+        className="h-[400px] w-[400px] drop-shadow-xl"
       ></Image>
-      <p className="text-3xl">Ambition. Action. Association.</p>
+      <p className="text-center text-3xl">Ambition. Action. Association.</p>
     </section>
   );
 }
