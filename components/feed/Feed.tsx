@@ -7,7 +7,7 @@ type FeedProps = {
 export const Feed = ({ podcasts }: FeedProps) => {
   return (
     <section>
-      <h1 className="mb-10 text-7xl font-bold tracking-tighter sm:text-center md:text-left lg:basis-1/2 lg:text-8xl">
+      <h1 className="mb-10 text-7xl font-bold tracking-tighter drop-shadow-xl sm:text-center md:text-left lg:basis-1/2 lg:text-8xl">
         TUNE IN
       </h1>
       <div className="flex flex-col gap-10">

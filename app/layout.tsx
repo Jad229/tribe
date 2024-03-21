@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`dark  ${ArchivoBlack.className}`}>
+      <body className={`${ArchivoBlack.className}`}>
         <Navbar />
         {children}
         <Footer />
