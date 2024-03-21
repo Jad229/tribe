@@ -34,7 +34,7 @@ export default function PodcastCard({ podcast, index }: PodcastCardProps) {
   };
 
   return (
-    <div className="flex flex-wrap items-center justify-around gap-5 border-t-2 pt-10">
+    <div className="flex flex-wrap items-center justify-around gap-5 border-t-2 pt-10 drop-shadow-xl">
       <p className="text-4xl font-bold">{index}</p>
       <div className="relative h-52 w-52 ">
         <Link href={podcast.external_urls.spotify} target="_blank">
